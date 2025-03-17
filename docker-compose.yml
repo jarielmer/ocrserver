@@ -1,0 +1,9 @@
+services:
+  ocr-server:
+    build: .
+    ports:
+      - "${PORT:-8080}:${PORT:-8080}"
+    environment:
+      - PORT=${PORT:-8080}
+    #volumes:
+    #  - ./tmp:/tmp/uploads
